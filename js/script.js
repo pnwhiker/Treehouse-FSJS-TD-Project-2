@@ -10,6 +10,9 @@ For assistance:
    Reach out in your Slack community: https://treehouse-fsjs-102.slack.com/app_redirect?channel=unit-2
 */
 
+function blockBuilder () {};
+
+
 
 function showPage (list, page){
 
@@ -27,11 +30,14 @@ function showPage (list, page){
   studentList.innerHTML = ''; 
   
    const studentItem = '';
+
    const li = document.createElement('li');
    li.className = 'student-item cf';
-   console.log(li);
+   
    const div1 = document.createElement('div');
    div1.className = 'student-details';
+
+   
 
   for (let i = 0; i < list.length; i += 1) {
   
