@@ -33,9 +33,27 @@ function showPage (list, page){
 
    const li = document.createElement('li');
    li.className = 'student-item cf';
+   console.log(li);
    
-   const div1 = document.createElement('div');
-   div1.className = 'student-details';
+   const divStudentDetails = document.createElement('div');
+   divStudentDetails.className = 'student-details';
+   console.log(divStudentDetails);
+
+   const studentAvatar = document.createElement('img');
+   studentAvatar.className = 'avatar';
+   console.log(studentAvatar);
+
+   const studentNameHeadline = document.createElement('h3');
+   console.log(studentNameHeadline);
+
+   
+
+
+
+
+
+   
+
 
    
 
