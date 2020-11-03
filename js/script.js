@@ -33,44 +33,35 @@ function showPage (list, page){
 
    const studentLi = document.createElement('li');
    studentLi.className = 'student-item cf';
-   console.log(studentLi);
+   //console.log(studentLi);
    
    const studentDetailsDiv = document.createElement('div');
    studentDetailsDiv.className = 'student-details';
-   console.log(studentDetailsDiv);
+   // console.log(studentDetailsDiv);
 
    const studentAvatar = document.createElement('img');
    studentAvatar.className = 'avatar';
-   console.log(studentAvatar);
+   // console.log(studentAvatar);
 
    const studentNameHeadline = document.createElement('h3');
-   console.log(studentNameHeadline);
+   // console.log(studentNameHeadline);
 
    const studentEmail = document.createElement('span');
    studentEmail.className = 'email';
-   console.log(studentEmail);
+   // console.log(studentEmail);
 
    const studentJoinedDiv = document.createElement('div');
    studentJoinedDiv.className = 'joined-details';
-   console.log(studentJoinedDiv);
-   
-   
+   // console.log(studentJoinedDiv);
 
+   const studentJoinedDate = document.createElement('span');
+   studentJoinedDate.className = 'date';
+   // console.log(studentJoinedDate);
 
-
-
-
-   
-
-
-   
-
-  for (let i = 0; i < list.length; i += 1) {
-  
-      if ( i >= startIndex && i <= endIndex ) {    
+   for (let i = 0; i < list.length; i += 1) {
+      console.log(list[i].name.first);
          
-      };
-      
+         
 
    };
 };
