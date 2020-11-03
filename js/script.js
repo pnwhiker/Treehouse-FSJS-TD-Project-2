@@ -31,17 +31,14 @@ function showPage (list, page){
   
    const studentItem = '';
 
-   const studentLi = document.createElement('li');
-   studentLi.className = 'student-item cf';
+   
    //console.log(studentLi);
    
-   const studentDetailsDiv = document.createElement('div');
-   studentDetailsDiv.className = 'student-details';
+   
    // console.log(studentDetailsDiv);
 
-   const studentAvatar = document.createElement('img');
-   studentAvatar.className = 'avatar';
-   // console.log(studentAvatar);
+   
+   
 
    const studentNameHeadline = document.createElement('h3');
    // console.log(studentNameHeadline);
@@ -59,7 +56,22 @@ function showPage (list, page){
    // console.log(studentJoinedDate);
 
    for (let i = 0; i < list.length; i += 1) {
-      console.log(list[i].name.first);
+
+      const studentLi = document.createElement('li');
+      studentLi.className = 'student-item cf';
+
+      const studentDetailsDiv = document.createElement('div');
+      studentDetailsDiv.className = 'student-details';
+
+      const studentAvatar = document.createElement('img');
+      studentAvatar.className = 'avatar';
+      studentAvatar.src = list[i].picture.large;
+      studentAvatar.alt = "Profile Picture";
+      //console.log(studentAvatar);
+
+
+
+
          
          
 
