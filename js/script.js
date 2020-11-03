@@ -38,6 +38,7 @@ function showPage (list, page){
 
       const studentDetailsDiv = document.createElement('div');
       studentDetailsDiv.className = 'student-details';
+      //console.log(studentDetailsDiv);
 
       const studentAvatar = document.createElement('img');
       studentAvatar.className = 'avatar';
@@ -56,13 +57,23 @@ function showPage (list, page){
 
       const studentJoinedDiv = document.createElement('div');
       studentJoinedDiv.className = 'joined-details';
-      // console.log(studentJoinedDiv);
+      //console.log(studentJoinedDiv);
 
       
       const studentJoinedDate = document.createElement('span');
       studentJoinedDate.className = 'date';
-      studentJoinedDate.innerHTML = list[i].registered.date;
+      studentJoinedDate.innerHTML = `Joined ${list[i].registered.date}`;
       //console.log(studentJoinedDate);
+
+      studentDetailsDiv.appendChild(studentAvatar);
+      studentDetailsDiv.appendChild(studentNameHeadline);
+      studentDetailsDiv.appendChild(studentEmail);
+      studentJoinedDiv.appendChild(studentJoinedDate);
+
+      studentLi.appendChild(studentDetailsDiv);
+      studentLi.appendChild(studentJoinedDiv);
+      console.log(studentLi);
+
 
 
 
