@@ -31,13 +31,13 @@ function showPage (list, page){
   
    const studentItem = '';
 
-   const li = document.createElement('li');
-   li.className = 'student-item cf';
-   console.log(li);
+   const studentLi = document.createElement('li');
+   studentLi.className = 'student-item cf';
+   console.log(studentLi);
    
-   const divStudentDetails = document.createElement('div');
-   divStudentDetails.className = 'student-details';
-   console.log(divStudentDetails);
+   const studentDetailsDiv = document.createElement('div');
+   studentDetailsDiv.className = 'student-details';
+   console.log(studentDetailsDiv);
 
    const studentAvatar = document.createElement('img');
    studentAvatar.className = 'avatar';
@@ -46,6 +46,14 @@ function showPage (list, page){
    const studentNameHeadline = document.createElement('h3');
    console.log(studentNameHeadline);
 
+   const studentEmail = document.createElement('span');
+   studentEmail.className = 'email';
+   console.log(studentEmail);
+
+   const studentJoinedDiv = document.createElement('div');
+   studentJoinedDiv.className = 'joined-details';
+   console.log(studentJoinedDiv);
+   
    
 
 
