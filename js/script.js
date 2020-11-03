@@ -31,30 +31,6 @@ function showPage (list, page){
   
    const studentItem = '';
 
-   
-   //console.log(studentLi);
-   
-   
-   // console.log(studentDetailsDiv);
-
-   
-   
-
-   const studentNameHeadline = document.createElement('h3');
-   // console.log(studentNameHeadline);
-
-   const studentEmail = document.createElement('span');
-   studentEmail.className = 'email';
-   // console.log(studentEmail);
-
-   const studentJoinedDiv = document.createElement('div');
-   studentJoinedDiv.className = 'joined-details';
-   // console.log(studentJoinedDiv);
-
-   const studentJoinedDate = document.createElement('span');
-   studentJoinedDate.className = 'date';
-   // console.log(studentJoinedDate);
-
    for (let i = 0; i < list.length; i += 1) {
 
       const studentLi = document.createElement('li');
@@ -69,6 +45,24 @@ function showPage (list, page){
       studentAvatar.alt = "Profile Picture";
       //console.log(studentAvatar);
 
+      const studentNameHeadline = document.createElement('h3');
+      studentNameHeadline.innerHTML = `${list[i].name.first} ${list[i].name.last}`
+      //console.log(studentNameHeadline);
+
+      const studentEmail = document.createElement('span');
+      studentEmail.className = 'email';
+      studentEmail.innerHTML = list[i].email;
+      //console.log(studentEmail);
+
+      const studentJoinedDiv = document.createElement('div');
+      studentJoinedDiv.className = 'joined-details';
+      // console.log(studentJoinedDiv);
+
+      
+      const studentJoinedDate = document.createElement('span');
+      studentJoinedDate.className = 'date';
+      studentJoinedDate.innerHTML = list[i].registered.date;
+      //console.log(studentJoinedDate);
 
 
 
