@@ -72,12 +72,9 @@ function showPage (list, page){
 
       studentLi.appendChild(studentDetailsDiv);
       studentLi.appendChild(studentJoinedDiv);
-      console.log(studentLi);
-
-
-
-
-         
+      //console.log(studentLi);    
+      
+      studentList.insertAdjacentElement('beforeend', studentLi);
          
 
    };
