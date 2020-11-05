@@ -88,10 +88,13 @@ function addPagination (list) {
    const linkList = document.querySelector('.link-list');
    linkList.innerHTML = '';
 
-   for (let i = 0; i <= numPages; i += 1) {
+   for (let i = 1; i <= numPages; i += 1) {
+      
       let pageButton = document.createElement('button');
       pageButton.innerHTML = [i];
-      console.log([i]);
+      // console.log(pageButton);
+
+      linkList.insertAdjacentElement('beforeend', pageButton);
       
    };
 
