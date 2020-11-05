@@ -80,7 +80,22 @@ function showPage (list, page){
    };
 };
 
+function addPagination (list) {
 
+   let numPages = Math.ceil((list.length)/9);
+   //console.log(numPages);
+
+   const linkList = document.querySelector('.link-list');
+   linkList.innerHTML = '';
+
+   for (let i = 0; i <= numPages; i += 1) {
+      let pageButton = document.createElement('button');
+      pageButton.innerHTML = [i];
+      console.log([i]);
+      
+   };
+
+};
    
    
 
@@ -95,3 +110,4 @@ This function will create and insert/append the elements needed for the paginati
 
 // Call functions
 showPage (data);
+addPagination(data);
