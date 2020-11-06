@@ -10,8 +10,7 @@ For assistance:
    Reach out in your Slack community: https://treehouse-fsjs-102.slack.com/app_redirect?channel=unit-2
 */
 
-function blockBuilder () {};
-
+const linkList = document.querySelector('.link-list');
 
 
 function showPage (list, page){
@@ -83,9 +82,7 @@ function showPage (list, page){
 function addPagination (list) {
 
    let numPages = Math.ceil((list.length)/9);
-   //console.log(numPages);
-
-   const linkList = document.querySelector('.link-list');
+   
    linkList.innerHTML = '';
 
    for (let i = 1; i <= numPages; i += 1) {
@@ -103,20 +100,16 @@ function addPagination (list) {
 
 };
    
-document.addEventListener('click', (event) => {
-   if (event.target === "BUTTON") {
-      
+linkList.addEventListener('click', (e) => {
+   if (e.target.tagName === "BUTTON") {
+      const previousButton = document.querySelector('.active');
+      previousButton.className = '';
+      const clickedButton = e.target;
+      clickedButton.className = 'active';
    }
 
 
 });
-
-
-
-/*
-Create the `addPagination` function
-This function will create and insert/append the elements needed for the pagination buttons
-*/
 
 
 
