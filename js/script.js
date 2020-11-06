@@ -103,7 +103,13 @@ function addPagination (list) {
 
 };
    
-   
+document.addEventListener('click', (event) => {
+   if (event.target === "BUTTON") {
+      
+   }
+
+
+});
 
 
 
