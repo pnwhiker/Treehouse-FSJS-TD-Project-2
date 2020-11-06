@@ -93,11 +93,13 @@ function addPagination (list) {
       let pageButton = document.createElement('button');
       pageButton.innerHTML = [i];
       pageButtonLi.appendChild(pageButton);
-      console.log(pageButtonLi);
-
+      console.log(pageButtonLi);    
       linkList.insertAdjacentElement('beforeend', pageButtonLi);
-      
-   };
+      };
+
+   
+   const firstButton = linkList.firstElementChild.firstElementChild;
+   firstButton.className = 'active';
 
 };
    
