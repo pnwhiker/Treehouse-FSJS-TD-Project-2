@@ -957,9 +957,6 @@
     },
     // Controls whether to follow symlinks while searching.
     "search.followSymlinks": true,
-    // This setting is deprecated. Please use drag and drop instead by dragging the search icon.
-    // Controls whether the search will be shown as a view in the sidebar or as a panel in the panel area for more horizontal space.
-    "search.location": "sidebar",
     // When enabled, the searchService process will be kept alive instead of being shut down after an hour of inactivity. This will keep the file search cache in memory.
     "search.maintainFileSearchCache": false,
     // Controls sorting order of editor history in quick open when filtering.
