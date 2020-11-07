@@ -3,22 +3,15 @@ Treehouse Techdegree:
 FSJS Project 2 - Data Pagination and Filtering
 */
 
-
-/*
-For assistance:
-   Check out the "Project Resources" section of the Instructions tab: https://teamtreehouse.com/projects/data-pagination-and-filtering#instructions
-   Reach out in your Slack community: https://treehouse-fsjs-102.slack.com/app_redirect?channel=unit-2
-*/
-
+const studentsPerPage = 9;
 const linkList = document.querySelector('.link-list');
 
 
 function showPage (list, page){
 
-  // create two variables which will represent the index for the first and last student on the page - DONE (?)
-
-  const startIndex = (page * 9) - 9;
-  const endIndex = page * 9;
+  const startIndex = (page * studentsPerPage) - studentsPerPage;
+  const endIndex = page * studentsPerPage;
+  console.log(startIndex, endIndex);
 
   // select the element with a class of `student-list` and assign it to a variable - DONE
   
@@ -81,7 +74,7 @@ function showPage (list, page){
 
 function addPagination (list) {
 
-   let numPages = Math.ceil((list.length)/9);
+   let numPages = Math.ceil((list.length)/studentsPerPage);
    
    linkList.innerHTML = '';
 
@@ -98,21 +91,23 @@ function addPagination (list) {
    const firstButton = linkList.firstElementChild.firstElementChild;
    firstButton.className = 'active';
 
+   linkList.addEventListener('click', (e) => {
+      if (e.target.tagName === "BUTTON") {
+         const previousButton = document.querySelector('.active');
+         previousButton.className = '';
+         const clickedButton = e.target;
+         clickedButton.className = 'active';
+      }
+   showPage (data, e.target.textContent);
+   
+   });
+
 };
    
-linkList.addEventListener('click', (e) => {
-   if (e.target.tagName === "BUTTON") {
-      const previousButton = document.querySelector('.active');
-      previousButton.className = '';
-      const clickedButton = e.target;
-      clickedButton.className = 'active';
-   }
 
-
-});
 
 
 
 // Call functions
-showPage (data);
+showPage (data, 1);
 addPagination(data);
