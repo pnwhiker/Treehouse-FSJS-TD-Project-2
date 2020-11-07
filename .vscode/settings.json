@@ -154,7 +154,7 @@
     //  - indentation: Use the indentation-based folding strategy.
     "editor.foldingStrategy": "auto",
     // Controls the font family.
-    "editor.fontFamily": "Hack",
+    "editor.fontFamily": "Consolas",
     // Configures font ligatures or font features.
     "editor.fontLigatures": false,
     // Controls the font size in pixels.
