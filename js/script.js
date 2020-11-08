@@ -23,7 +23,7 @@ function showPage (list, page){
   
    const studentItem = '';
 
-   for (let i = 0; i < list.length; i += 1) {
+   for (let i = startIndex; i < endIndex; i += 1) {
 
       const studentLi = document.createElement('li');
       studentLi.className = 'student-item cf';
