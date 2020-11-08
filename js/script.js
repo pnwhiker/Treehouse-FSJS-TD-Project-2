@@ -11,7 +11,7 @@ function showPage (list, page){
 
   const startIndex = (page * studentsPerPage) - studentsPerPage;
   const endIndex = page * studentsPerPage;
-  console.log(startIndex, endIndex);
+  //console.log(startIndex, endIndex);
 
   // select the element with a class of `student-list` and assign it to a variable - DONE
   
@@ -39,7 +39,7 @@ function showPage (list, page){
       //console.log(studentAvatar);
 
       const studentNameHeadline = document.createElement('h3');
-      studentNameHeadline.innerHTML = `${list[i].name.first} ${list[i].name.last}`
+      studentNameHeadline.innerHTML = `${list[i].name.first} ${list[i].name.last}`;
       //console.log(studentNameHeadline);
 
       const studentEmail = document.createElement('span');
@@ -104,10 +104,6 @@ function addPagination (list) {
 
 };
    
-
-
-
-
 // Call functions
 showPage (data, 1);
 addPagination(data);
