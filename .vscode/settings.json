@@ -154,7 +154,7 @@
     //  - indentation: Use the indentation-based folding strategy.
     "editor.foldingStrategy": "auto",
     // Controls the font family.
-    "editor.fontFamily": "Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "Consolas",
     // Configures font ligatures or font features.
     "editor.fontLigatures": false,
     // Controls the font size in pixels.
@@ -544,7 +544,7 @@
     // Overrides colors from the currently selected color theme.
     "workbench.colorCustomizations": {},
     // Specifies the color theme used in the workbench.
-    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorTheme": "Material Theme High Contrast",
     // Controls the number of recently used commands to keep in history for the command palette. Set to 0 to disable command history.
     "workbench.commandPalette.history": 50,
     // Controls whether the last typed input to the command palette should be restored when opening it the next time.
@@ -622,7 +622,11 @@
     //  - null: No file icons
     //  - vs-minimal
     //  - vs-seti
+<<<<<<< HEAD
     "workbench.iconTheme": "material-icon-theme",
+=======
+    "workbench.iconTheme": "eq-material-theme-icons-darker",
+>>>>>>> 4af92b56327ab403e120eb81cfc0aecfd57a2135
     // Controls whether keyboard navigation in lists and trees is automatically triggered simply by typing. If set to `false`, keyboard navigation is only triggered when executing the `list.toggleKeyboardNavigation` command, for which you can assign a keyboard shortcut.
     "workbench.list.automaticKeyboardNavigation": true,
     // Controls whether lists and trees support horizontal scrolling in the workbench. Warning: turning on this setting has a performance implication.
